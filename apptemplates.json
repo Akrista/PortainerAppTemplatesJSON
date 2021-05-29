@@ -2577,7 +2577,7 @@
                     "set": "latest"
                 }
             ],
-            "image": "linuxserver/plex:latest",
+            "image": "ghcr.io/linuxserver/plex:latest",
             "logo": "https://raw.githubusercontent.com/SelfhostedPro/selfhosted_templates/master/Images/plex-icon.png",
             "name": "plex",
             "network": "host",

@@ -2536,7 +2536,7 @@
                     "name": "PGID"
                 }
             ],
-            "image": "linuxserver/piwigo:latest",
+            "image": "ghcr.io/linuxserver/piwigo",
             "logo": "https://raw.githubusercontent.com/SelfhostedPro/selfhosted_templates/master/Images/piwigo-icon.png",
             "name": "piwigo",
             "platform": "linux",

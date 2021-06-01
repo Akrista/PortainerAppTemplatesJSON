@@ -516,7 +516,7 @@
                     "name": "TZ"
                 }
             ],
-            "image": "linuxserver/jellyfin:latest",
+            "image": "ghcr.io/linuxserver/jellyfin:latest",
             "logo": "https://raw.githubusercontent.com/SelfhostedPro/selfhosted_templates/master/Images/jellyfin.png",
             "name": "jellyfin",
             "platform": "linux",

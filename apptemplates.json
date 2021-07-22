@@ -1,13 +1,11 @@
 {
     "version": "2",
-    "templates": [
-        {
+    "templates": [{
             "categories": [
                 "Music"
             ],
             "description": "Airsonic is a free, web-based media streamer, providing ubiqutious access to your music. Use it to share your music with friends, or to listen to your own music while at work. You can stream to multiple players simultaneously, for instance to one player in your kitchen and another in your living room.",
-            "env": [
-                {
+            "env": [{
                     "default": "1000",
                     "label": "PUID",
                     "name": "PUID"
@@ -38,8 +36,7 @@
             "restart_policy": "unless-stopped",
             "title": "Airsonic",
             "type": 1,
-            "volumes": [
-                {
+            "volumes": [{
                     "bind": "/portainer/Music",
                     "container": "/music"
                 },
@@ -68,12 +65,10 @@
                 "Authentication"
             ],
             "description": "An open-source authentication and authorization server providing 2-factor authentication and single sign-on (SSO) for your applications via a web portal.",
-            "env": [
-                {
-                    "label": "TZ",
-                    "name": "TZ"
-                }
-            ],
+            "env": [{
+                "label": "TZ",
+                "name": "TZ"
+            }],
             "image": "authelia/authelia:latest",
             "logo": "https://raw.githubusercontent.com/SelfhostedPro/selfhosted_templates/master/Images/authelia.png",
             "name": "authelia",
@@ -85,12 +80,10 @@
             "restart_policy": "unless-stopped",
             "title": "Authelia",
             "type": 1,
-            "volumes": [
-                {
-                    "bind": "/portainer/Files/AppData/Config/Authelia",
-                    "container": "/etc/authelia/"
-                }
-            ]
+            "volumes": [{
+                "bind": "/portainer/Files/AppData/Config/Authelia",
+                "container": "/etc/authelia/"
+            }]
         },
         {
             "categories": [
@@ -98,8 +91,7 @@
                 "Music"
             ],
             "description": "Bazarr is a companion application to Sonarr and Radarr. It can manage and download subtitles based on your requirements. You define your preferences by TV show or movie and Bazarr takes care of everything for you.",
-            "env": [
-                {
+            "env": [{
                     "default": "1000",
                     "label": "PUID",
                     "name": "PUID"
@@ -124,8 +116,7 @@
             "restart_policy": "unless-stopped",
             "title": "Bazarr",
             "type": 1,
-            "volumes": [
-                {
+            "volumes": [{
                     "bind": "/portainer/Files/AppData/Config/Bazarr",
                     "container": "/config"
                 },
@@ -144,8 +135,7 @@
                 "Music"
             ],
             "description": "The purpose of beets is to get your music collection right once and for all. It catalogs your collection, automatically improving its metadata as it goes using the MusicBrainz database. Then it provides a bouquet of tools for manipulating and accessing your music.",
-            "env": [
-                {
+            "env": [{
                     "default": "1000",
                     "label": "PUID",
                     "name": "PUID"
@@ -166,8 +156,7 @@
             "restart_policy": "unless-stopped",
             "title": "Beets",
             "type": 1,
-            "volumes": [
-                {
+            "volumes": [{
                     "bind": "/portainer/Files/AppData/Config/Beets",
                     "container": "/config"
                 },
@@ -198,12 +187,10 @@
             "restart_policy": "unless-stopped",
             "title": "Bitwarden RS",
             "type": 1,
-            "volumes": [
-                {
-                    "bind": "/portainer/Files/AppData/Config/Bitwarden-rs",
-                    "container": "/config"
-                }
-            ]
+            "volumes": [{
+                "bind": "/portainer/Files/AppData/Config/Bitwarden-rs",
+                "container": "/config"
+            }]
         },
         {
             "categories": [
@@ -211,8 +198,7 @@
                 "Other"
             ],
             "description": "Booksonic is a server and an app for streaming your audiobooks to any pc or android phone. Most of the functionality is also availiable on other platforms that have apps for subsonic",
-            "env": [
-                {
+            "env": [{
                     "default": "1000",
                     "label": "PUID",
                     "name": "PUID"
@@ -238,8 +224,7 @@
             "restart_policy": "unless-stopped",
             "title": "Booksonic",
             "type": 1,
-            "volumes": [
-                {
+            "volumes": [{
                     "bind": "/portainer/Books",
                     "container": "/books"
                 },
@@ -270,20 +255,17 @@
             "restart_policy": "unless-stopped",
             "title": "EmbyStat",
             "type": 1,
-            "volumes": [
-                {
-                    "bind": "/portainer/Files/AppData/Config/EmbyStat",
-                    "container": "/config"
-                }
-            ]
+            "volumes": [{
+                "bind": "/portainer/Files/AppData/Config/EmbyStat",
+                "container": "/config"
+            }]
         },
         {
             "categories": [
                 "Music"
             ],
             "description": null,
-            "env": [
-                {
+            "env": [{
                     "default": "1000",
                     "label": "PUID",
                     "name": "PUID"
@@ -304,8 +286,7 @@
             "restart_policy": "unless-stopped",
             "title": "Headphones",
             "type": 1,
-            "volumes": [
-                {
+            "volumes": [{
                     "bind": "/portainer/Files/AppData/Config/Headphones",
                     "container": "/config"
                 },
@@ -326,8 +307,7 @@
                 "Other"
             ],
             "description": "Heimdall is a way to organise all those links to your most used web sites and web applications in a simple way.",
-            "env": [
-                {
+            "env": [{
                     "default": "1000",
                     "label": "PUID",
                     "name": "PUID"
@@ -349,12 +329,10 @@
             "restart_policy": "unless-stopped",
             "title": "Heimdall",
             "type": 1,
-            "volumes": [
-                {
-                    "bind": "/portainer/Files/AppData/Config/Heimdall",
-                    "container": "/config"
-                }
-            ]
+            "volumes": [{
+                "bind": "/portainer/Files/AppData/Config/Heimdall",
+                "container": "/config"
+            }]
         },
         {
             "categories": [
@@ -373,8 +351,7 @@
             "restart_policy": "unless-stopped",
             "title": "Homer",
             "type": 1,
-            "volumes": [
-                {
+            "volumes": [{
                     "bind": "/portainer/Files/AppData/Config/Homer/assets",
                     "container": "/www/assets"
                 },
@@ -400,12 +377,10 @@
             "restart_policy": "unless-stopped",
             "title": "Huginn",
             "type": 1,
-            "volumes": [
-                {
-                    "bind": "/portainer/Files/AppData/Config/huginn",
-                    "container": "/var/lib/mysql"
-                }
-            ]
+            "volumes": [{
+                "bind": "/portainer/Files/AppData/Config/huginn",
+                "container": "/var/lib/mysql"
+            }]
         },
         {
             "categories": [
@@ -416,8 +391,7 @@
                 "Web"
             ],
             "description": "Invoices, Expenses and Tasks built with Laravel and Flutter.",
-            "env": [
-                {
+            "env": [{
                     "default": "invoice.my.domain",
                     "label": "URL",
                     "name": "URL"
@@ -460,8 +434,7 @@
                 "Tools"
             ],
             "description": "Jackett works as a proxy server it translates queries from apps like Sonarr etc into tracker-site-specific http queries and parses the html response sending results back to the requesting software.[",
-            "env": [
-                {
+            "env": [{
                     "default": "1000",
                     "label": "PUID",
                     "name": "PUID"
@@ -482,8 +455,7 @@
             "restart_policy": "unless-stopped",
             "title": "Jackett",
             "type": 1,
-            "volumes": [
-                {
+            "volumes": [{
                     "bind": "/portainer/Files/AppData/Config/Jackett",
                     "container": "/config"
                 },
@@ -500,8 +472,7 @@
                 "Photos"
             ],
             "description": "Jellyfin is a Free Software Media System that puts you in control of managing and streaming your media. It is an alternative to the proprietary Emby and Plex, to provide media from a dedicated server to end-user devices via multiple apps.",
-            "env": [
-                {
+            "env": [{
                     "default": "1000",
                     "label": "PUID",
                     "name": "PUID"
@@ -527,8 +498,7 @@
             "restart_policy": "unless-stopped",
             "title": "Jellyfin",
             "type": 1,
-            "volumes": [
-                {
+            "volumes": [{
                     "bind": "/portainer/Files/AppData/Config/Jelllyfin",
                     "container": "/config"
                 },
@@ -547,8 +517,7 @@
                 "Video"
             ],
             "description": "Headless installation of Kodi™ (formerly known as XBMC™), to enable library updates.",
-            "env": [
-                {
+            "env": [{
                     "default": "1000",
                     "label": "PUID",
                     "name": "PUID"
@@ -570,20 +539,17 @@
             "restart_policy": "unless-stopped",
             "title": "Kodi Headless",
             "type": 1,
-            "volumes": [
-                {
-                    "bind": "/portainer/Files/AppData/Config/Kodi",
-                    "container": "/config"
-                }
-            ]
+            "volumes": [{
+                "bind": "/portainer/Files/AppData/Config/Kodi",
+                "container": "/config"
+            }]
         },
         {
             "categories": [
                 "Books"
             ],
             "description": "LazyLibrarian is a program to follow authors and grab metadata for all your digital reading needs.",
-            "env": [
-                {
+            "env": [{
                     "default": "1000",
                     "label": "PUID",
                     "name": "PUID"
@@ -604,8 +570,7 @@
             "restart_policy": "unless-stopped",
             "title": "LazyLibrarian",
             "type": 1,
-            "volumes": [
-                {
+            "volumes": [{
                     "container": "/config"
                 },
                 {
@@ -622,8 +587,7 @@
                 "Web"
             ],
             "description": "This container sets up an Nginx webserver and reverse proxy with php support and a built-in letsencrypt client that automates free SSL server certificate generation and renewal processes. It also contains fail2ban for intrusion prevention.\r\n  \r\n  Before running this container, make sure that the url and subdomains are properly forwarded to this container's host.\r\n  \r\n  - Port 443 on the internet side of the router should be forwarded to this container's port 443.\r\n  - If you need a dynamic dns provider, you can use the free provider duckdns.org where the url will be yoursubdomain.duckdns.org and the subdomains    can be www,ftp,cloud\r\n  - The container detects changes to url and subdomains, revokes existing certs and generates new ones during start. \r\n  - It also detects changes to the DHLEVEL parameter and replaces the dhparams file.\r\n  \r\n  - If you'd like to password protect your sites, you can use htpasswd. Run the following command on your host to generate the htpasswd file docker exec -it letsencrypt htpasswd -c /config/nginx/.htpasswd \u0026lt;username\u0026gt;",
-            "env": [
-                {
+            "env": [{
                     "label": "EMAIL",
                     "name": "EMAIL",
                     "set": "-Xms256m -Xmx512m"
@@ -680,9 +644,59 @@
             "restart_policy": "unless-stopped",
             "title": "Let's Encrypt",
             "type": 1,
-            "volumes": [
+            "volumes": [{
+                "bind": "/portainer/Files/AppData/Config/LetsEncrypt",
+                "container": "/config"
+            }]
+        },
+
+        {
+            "category": [
+                "Music"
+            ],
+            "description": "Libresonic is a free, web-based media streamer, providing ubiqutious access to your music. Use it to share your music with friends, or to listen to your own music while at work. You can stream to multiple players simultaneously, for instance to one player in your kitchen and another in your living room. /music = Location of music. /media = Location of other media. /podcasts = Location of podcasts. /playlists = Location for playlists storage. CONTEXT_PATH is for setting url-base in reverse proxy setups - (optional) Default user/pass is admin/admin",
+            "env": [{
+                    "label": "CONTEXT_PATH",
+                    "name": "CONTEXT_PATH",
+                    "set": ""
+                },
                 {
-                    "bind": "/portainer/Files/AppData/Config/LetsEncrypt",
+                    "label": "PUID",
+                    "name": "PUID",
+                    "set": "1000"
+                },
+                {
+                    "label": "PGID",
+                    "name": "PGID",
+                    "set": "1000"
+                },
+                {
+                    "label": "TZ",
+                    "name": "TZ",
+                    "set": "America/Chicago"
+                }
+            ],
+            "image": "linuxserver/libresonic:latest",
+            "logo": "https://raw.githubusercontent.com/thesugarat/portainer_templates-1/master/Images/libresonic.png",
+            "platform": "linux",
+            "ports": [
+                "4040/tcp"
+            ],
+            "title": "libresonic",
+            "type": 1,
+            "volumes": [{
+                    "container": "/music"
+                },
+                {
+                    "container": "/playlists"
+                },
+                {
+                    "container": "/podcasts"
+                },
+                {
+                    "container": "/media"
+                },
+                {
                     "container": "/config"
                 }
             ]
@@ -703,12 +717,51 @@
             "restart_policy": "unless-stopped",
             "title": "LibreSpeed",
             "type": 1,
-            "volumes": [
+            "volumes": [{
+                "bind": "/portainer/Files/AppData/Config/LibreSpeed",
+                "container": "/config"
+            }]
+        },
+        {
+            "categories": [
+                "Other",
+                "Tools"
+            ],
+            "description": "This program runs a speedtest check every hour and graphs the results. The back-end is written in Laravel and the front-end uses React. It uses the Ookla's speedtest cli package to get the data and uses Chart.js to plot the results.",
+            "image": "henrywhitaker3/speedtest-tracker",
+            "logo": "https://repository-images.githubusercontent.com/254024234/7552e180-8690-11ea-9f00-9a53b6a6baa3",
+            "name": "speedtest",
+            "platform": "linux",
+            "ports": [
+                "8765:80/tcp"
+            ],
+            "restart_policy": "unless-stopped",
+            "title": "SpeedTest Tracker",
+            "type": 3,
+            "env": [{
+                    "default": "998",
+                    "label": "PUID",
+                    "name": "PUID"
+                },
                 {
-                    "bind": "/portainer/Files/AppData/Config/LibreSpeed",
-                    "container": "/config"
+                    "default": "100",
+                    "label": "PGID",
+                    "name": "PGID"
+                },
+                {
+                    "label": "TZ",
+                    "name": "TZ"
+                },
+                {
+                    "label": "OOKLA_EULA_GDPR",
+                    "name": "OOKLA_EULA_GDPR",
+                    "set": "true"
                 }
-            ]
+            ],
+            "volumes": [{
+                "bind": "/portainer/Files/AppData/Config/speedtest-tracker",
+                "container": "/config"
+            }]
         },
         {
             "categories": [
@@ -718,8 +771,7 @@
                 "Photos"
             ],
             "description": "Lychee is a free photo-management tool, which runs on your server or web-space. Installing is a matter of seconds. Upload, manage and share photos like from a native application. Lychee comes with everything you need and all your photos are stored securely.",
-            "env": [
-                {
+            "env": [{
                     "default": "1000",
                     "label": "PUID",
                     "name": "PUID"
@@ -740,8 +792,7 @@
             "restart_policy": "unless-stopped",
             "title": "Lychee",
             "type": 1,
-            "volumes": [
-                {
+            "volumes": [{
                     "bind": "/portainer/Files/AppData/Config/Lychee",
                     "container": "/config"
                 },
@@ -757,8 +808,7 @@
                 "Tools"
             ],
             "description": "An Enhanced drop in replacement for Mysql",
-            "env": [
-                {
+            "env": [{
                     "default": "1000",
                     "label": "PUID",
                     "name": "PUID"
@@ -784,20 +834,17 @@
             "restart_policy": "unless-stopped",
             "title": "MariaDB",
             "type": 1,
-            "volumes": [
-                {
-                    "bind": "/portainer/Files/AppData/Config/Mariadb",
-                    "container": "/config"
-                }
-            ]
+            "volumes": [{
+                "bind": "/portainer/Files/AppData/Config/Mariadb",
+                "container": "/config"
+            }]
         },
         {
             "categories": [
                 "Other"
             ],
             "description": "McMyAdmin 2 is the leading web control panel and administration console for Minecraft servers.",
-            "env": [
-                {
+            "env": [{
                     "default": "1000",
                     "label": "PUID",
                     "name": "PUID"
@@ -819,11 +866,9 @@
             "restart_policy": "unless-stopped",
             "title": "McMyAdmin 2",
             "type": 1,
-            "volumes": [
-                {
-                    "container": "/minecraft"
-                }
-            ]
+            "volumes": [{
+                "container": "/minecraft"
+            }]
         },
         {
             "categories": [
@@ -831,8 +876,7 @@
                 "Video"
             ],
             "description": "Medusa, automatic Video Library Manager for TV Shows. It watches for new episodes of your favorite shows, and when they are posted it does its magic.",
-            "env": [
-                {
+            "env": [{
                     "default": "1000",
                     "label": "PUID",
                     "name": "PUID"
@@ -853,8 +897,7 @@
             "restart_policy": "unless-stopped",
             "title": "Medusa",
             "type": 1,
-            "volumes": [
-                {
+            "volumes": [{
                     "bind": "/portainer/Files/AppData/Config/Medusa",
                     "container": "/config"
                 },
@@ -873,8 +916,7 @@
                 "Other"
             ],
             "description": "Server version of minetest, a free, open source alternative to minecraft.",
-            "env": [
-                {
+            "env": [{
                     "default": "1000",
                     "label": "PUID",
                     "name": "PUID"
@@ -895,11 +937,9 @@
             "restart_policy": "unless-stopped",
             "title": "Minetest",
             "type": 1,
-            "volumes": [
-                {
-                    "container": "/config/.minetest"
-                }
-            ]
+            "volumes": [{
+                "container": "/config/.minetest"
+            }]
         },
         {
             "categories": [
@@ -908,8 +948,7 @@
                 "Tools"
             ],
             "description": "Minisatip is a multi-threaded satip server version 1.2 that runs under Linux and it was tested with DVB-S, DVB-S2, DVB-T, DVB-T2, DVB-C, DVB-C2, ATSC and ISDB-T cards.\n\n  The application is designed to stream the requested data to multiple clients (even with one dvb card) at the same time while opening different pids.\n  ",
-            "env": [
-                {
+            "env": [{
                     "default": "1000",
                     "label": "PUID",
                     "name": "PUID"
@@ -949,8 +988,7 @@
             "restart_policy": "unless-stopped",
             "title": "Mstream",
             "type": 1,
-            "volumes": [
-                {
+            "volumes": [{
                     "bind": "/portainer/Files/AppData/Config/Mstream",
                     "container": "/config"
                 },
@@ -967,8 +1005,7 @@
                 "Chat"
             ],
             "description": "Mumble is a voicechat program for gamers written on top of Qt and Opus. Murmur is the server backend for Mumble.",
-            "env": [
-                {
+            "env": [{
                     "default": "1000",
                     "label": "PUID",
                     "name": "PUID"
@@ -994,8 +1031,7 @@
             "restart_policy": "unless-stopped",
             "title": "Murmur",
             "type": 1,
-            "volumes": [
-                {
+            "volumes": [{
                     "bind": "/etc/localtime:ro",
                     "container": "/etc/localtime"
                 },
@@ -1020,8 +1056,7 @@
                 "Tools"
             ],
             "description": " MusicBrainz is an open music encyclopedia that collects music metadata and makes it available to the public.",
-            "env": [
-                {
+            "env": [{
                     "label": "BRAINZCODE",
                     "name": "BRAINZCODE",
                     "set": ""
@@ -1047,8 +1082,7 @@
             "restart_policy": "unless-stopped",
             "title": "MusicBrainz",
             "type": 1,
-            "volumes": [
-                {
+            "volumes": [{
                     "bind": "/portainer/Files/AppData/Config/MusicBrainz",
                     "container": "/config"
                 },
@@ -1066,8 +1100,7 @@
                 "Tools"
             ],
             "description": "A lightweight portal to view, manage your HTPC apps without having to run anything more than a PHP enabled webserver. With Muximux you don't need to keep multiple tabs open, or bookmark the URL to all of your apps.",
-            "env": [
-                {
+            "env": [{
                     "default": "1000",
                     "label": "PUID",
                     "name": "PUID"
@@ -1088,12 +1121,10 @@
             "restart_policy": "unless-stopped",
             "title": "Muximux",
             "type": 1,
-            "volumes": [
-                {
-                    "bind": "/portainer/Files/AppData/Config/Muximux",
-                    "container": "/config"
-                }
-            ]
+            "volumes": [{
+                "bind": "/portainer/Files/AppData/Config/Muximux",
+                "container": "/config"
+            }]
         },
         {
             "categories": [
@@ -1101,8 +1132,7 @@
                 "Books"
             ],
             "description": "An automated Comic Book downloader (cbr/cbz) for use with SABnzbd, NZBGet and torrents.",
-            "env": [
-                {
+            "env": [{
                     "default": "1000",
                     "label": "PUID",
                     "name": "PUID"
@@ -1123,8 +1153,7 @@
             "restart_policy": "unless-stopped",
             "title": "Mylar",
             "type": 1,
-            "volumes": [
-                {
+            "volumes": [{
                     "bind": "/portainer/Files/AppData/Config/Mylar",
                     "container": "/config"
                 },
@@ -1147,8 +1176,7 @@
                 "Web"
             ],
             "description": "Where are your photos and documents? With Nextcloud you pick a server of your choice, at home, in a data center or at a provider. And that is where your files will be. Nextcloud runs on that server, protecting your data and giving you access from your desktop or mobile devices.",
-            "env": [
-                {
+            "env": [{
                     "default": "1000",
                     "label": "PUID",
                     "name": "PUID"
@@ -1192,8 +1220,7 @@
                 "Proxy"
             ],
             "description": "Nginx is a web server with a strong focus on high concurrency, performance and low memory usage. It can also act as a reverse proxy server for HTTP, HTTPS, SMTP, POP3, and IMAP protocols, as well as a load balancer and an HTTP cache.",
-            "env": [
-                {
+            "env": [{
                     "default": "1000",
                     "label": "PUID",
                     "name": "PUID"
@@ -1215,12 +1242,10 @@
             "restart_policy": "unless-stopped",
             "title": "Nginx",
             "type": 1,
-            "volumes": [
-                {
-                    "bind": "/portainer/Files/AppData/Config/Nginx",
-                    "container": "/config"
-                }
-            ]
+            "volumes": [{
+                "bind": "/portainer/Files/AppData/Config/Nginx",
+                "container": "/config"
+            }]
         },
         {
             "categories": [
@@ -1240,20 +1265,17 @@
             "restart_policy": "unless-stopped",
             "title": "Nginx Proxy Manager",
             "type": 1,
-            "volumes": [
-                {
-                    "bind": "/portainer/Files/AppData/Config/Nginx-Proxy",
-                    "container": "/config"
-                }
-            ]
+            "volumes": [{
+                "bind": "/portainer/Files/AppData/Config/Nginx-Proxy",
+                "container": "/config"
+            }]
         },
         {
             "categories": [
                 "Downloaders"
             ],
             "description": "NZBGet is a usenet downloader, written in C++ and designed with performance in mind to achieve maximum download speed by using very little system resources. It supports all platforms including Windows, Mac, Linux and works on all devices including PC, NAS, WLAN routers and media players",
-            "env": [
-                {
+            "env": [{
                     "default": "1000",
                     "label": "PUID",
                     "name": "PUID"
@@ -1274,8 +1296,7 @@
             "restart_policy": "unless-stopped",
             "title": "NZBGet",
             "type": 1,
-            "volumes": [
-                {
+            "volumes": [{
                     "bind": "/portainer/Files/AppData/Config/Nzbget",
                     "container": "/config"
                 },
@@ -1292,8 +1313,7 @@
                 "Tools"
             ],
             "description": "NZBHydra is a meta search for NZB indexers and the \"spiritual successor\" to NZBmegasearcH. It provides easy access to a number of raw and newznab based indexers.",
-            "env": [
-                {
+            "env": [{
                     "default": "1000",
                     "label": "PUID",
                     "name": "PUID"
@@ -1314,8 +1334,7 @@
             "restart_policy": "unless-stopped",
             "title": "NZBHydra 2",
             "type": 1,
-            "volumes": [
-                {
+            "volumes": [{
                     "bind": "/portainer/Files/AppData/Config/Nzbhydra2",
                     "container": "/config"
                 },
@@ -1333,8 +1352,7 @@
                 "Tools"
             ],
             "description": "Ombi allows you to host your own Plex Request and user management system. ",
-            "env": [
-                {
+            "env": [{
                     "default": "1000",
                     "label": "PUID",
                     "name": "PUID"
@@ -1355,20 +1373,17 @@
             "restart_policy": "unless-stopped",
             "title": "Ombi",
             "type": 1,
-            "volumes": [
-                {
-                    "bind": "/portainer/Files/AppData/Config/Ombi",
-                    "container": "/config"
-                }
-            ]
+            "volumes": [{
+                "bind": "/portainer/Files/AppData/Config/Ombi",
+                "container": "/config"
+            }]
         },
         {
             "categories": [
                 "Other"
             ],
             "description": "OpenVPN Access Server is a full featured secure network tunneling VPN software solution that integrates OpenVPN server capabilities, enterprise management capabilities, simplified OpenVPN Connect UI, and OpenVPN Client software packages that accommodate Windows, MAC, Linux, Android, and iOS environments.",
-            "env": [
-                {
+            "env": [{
                     "label": "INTERFACE",
                     "name": "INTERFACE",
                     "set": "eth0"
@@ -1396,12 +1411,10 @@
             "restart_policy": "unless-stopped",
             "title": "OpenVPN Access Server",
             "type": 1,
-            "volumes": [
-                {
-                    "bind": "/portainer/Files/AppData/Config/OpenVPN-AS",
-                    "container": "/config"
-                }
-            ]
+            "volumes": [{
+                "bind": "/portainer/Files/AppData/Config/OpenVPN-AS",
+                "container": "/config"
+            }]
         },
         {
             "categories": [
@@ -1409,8 +1422,7 @@
                 "Tools"
             ],
             "description": "Organizr allows you to setup Tabs that will be loaded all in one webpage. You can then work on your server with ease.",
-            "env": [
-                {
+            "env": [{
                     "default": "1000",
                     "label": "PUID",
                     "name": "PUID"
@@ -1431,20 +1443,17 @@
             "restart_policy": "unless-stopped",
             "title": "Organizr v2",
             "type": 1,
-            "volumes": [
-                {
-                    "bind": "/portainer/Files/AppData/Config/Organizr",
-                    "container": "/config"
-                }
-            ]
+            "volumes": [{
+                "bind": "/portainer/Files/AppData/Config/Organizr",
+                "container": "/config"
+            }]
         },
         {
             "categories": [
                 "Other"
             ],
             "description": "OScam is a softcam, software to be used to decrypt digital television channels on a settopbox (receiver), as an alternative for a conditional access module\n  (CAM). OScam is, compared with other softcams (CCcam, mgcamd, etc.), open source. Hence, the name Open Source Conditional Access Module (OScam). OScam is based on the\n  not so well known softcam MpCS. The main features of OSCam are next to its softcam capabilities, that it is able to function as a cardserver.",
-            "env": [
-                {
+            "env": [{
                     "default": "1000",
                     "label": "PUID",
                     "name": "PUID"
@@ -1466,20 +1475,17 @@
             "restart_policy": "unless-stopped",
             "title": "OScam",
             "type": 1,
-            "volumes": [
-                {
-                    "bind": "/portainer/Files/AppData/Config/OScam",
-                    "container": "/config"
-                }
-            ]
+            "volumes": [{
+                "bind": "/portainer/Files/AppData/Config/OScam",
+                "container": "/config"
+            }]
         },
         {
             "categories": [
                 "Photos"
             ],
             "description": "A simple, easy way to turn a photo album into a webgallery",
-            "env": [
-                {
+            "env": [{
                     "default": "1000",
                     "label": "PUID",
                     "name": "PUID"
@@ -1500,8 +1506,7 @@
             "restart_policy": "unless-stopped",
             "title": "PhotoShow",
             "type": 1,
-            "volumes": [
-                {
+            "volumes": [{
                     "bind": "/portainer/Pictures",
                     "container": "/Pictures"
                 },
@@ -1532,20 +1537,17 @@
             "restart_policy": "unless-stopped",
             "title": "Snibox",
             "type": 1,
-            "volumes": [
-                {
-                    "bind": "/portainer/Files/AppData/Config/Snibox",
-                    "container": "/app/db/database"
-                }
-            ]
+            "volumes": [{
+                "bind": "/portainer/Files/AppData/Config/Snibox",
+                "container": "/app/db/database"
+            }]
         },
         {
             "categories": [
                 "Wiki"
             ],
             "description": "Bookstack is a free and open source Wiki designed for creating beautiful documentation. Feautring a simple, but powerful WYSIWYG editor it allows for teams to create detailed and useful documentation with ease.",
-            "env": [
-                {
+            "env": [{
                     "default": "1000",
                     "label": "PUID",
                     "name": "PUID"
@@ -1589,8 +1591,7 @@
                 "Photo"
             ],
             "description": "Chevereto is a powerful and fast image hosting script that allows you to create your very own full featured image hosting website in just minutes. Please note that this offers only the free Chevereto version..",
-            "env": [
-                {
+            "env": [{
                     "default": "1000",
                     "label": "PUID",
                     "name": "PUID"
@@ -1636,11 +1637,9 @@
             "restart_policy": "unless-stopped",
             "title": "Chevereto",
             "type": 1,
-            "volumes": [
-                {
-                    "container": "/var/www/html/images"
-                }
-            ]
+            "volumes": [{
+                "container": "/var/www/html/images"
+            }]
         },
         {
             "categories": [
@@ -1658,12 +1657,10 @@
             "restart_policy": "unless-stopped",
             "title": "Chowdown",
             "type": 1,
-            "volumes": [
-                {
-                    "bind": "/portainer/Files/AppData/Config/Chowdown",
-                    "container": "/config"
-                }
-            ]
+            "volumes": [{
+                "bind": "/portainer/Files/AppData/Config/Chowdown",
+                "container": "/config"
+            }]
         },
         {
             "categories": [
@@ -1671,8 +1668,7 @@
                 "Books"
             ],
             "description": "Calibre Web is a web app providing a clean interface for browsing, reading and downloading eBooks using an existing Calibre database.\n\n  [br][br]\n  [b][u][span style='color: #E80000;']Configuration[/span][/u][/b][br]\n  [b]/config[/b] Where Calibre-web should store it's database[br]\n  [b]/books[/b] Path to your calibre library metadata.db file[br]",
-            "env": [
-                {
+            "env": [{
                     "default": "1000",
                     "label": "PUID",
                     "name": "PUID"
@@ -1693,8 +1689,7 @@
             "restart_policy": "unless-stopped",
             "title": "Calibre Web",
             "type": 1,
-            "volumes": [
-                {
+            "volumes": [{
                     "bind": "/portainer/Books",
                     "container": "/books"
                 },
@@ -1709,8 +1704,7 @@
                 "Downloaders"
             ],
             "description": "Cardigann, a server for adding extra indexers to Sonarr, SickRage and CouchPotato via Torznab and TorrentPotato proxies. Behind the scenes Cardigann logs in and runs searches and then transforms the results into a compatible format.",
-            "env": [
-                {
+            "env": [{
                     "default": "1000",
                     "label": "PUID",
                     "name": "PUID"
@@ -1731,12 +1725,10 @@
             "restart_policy": "unless-stopped",
             "title": "Cardigann",
             "type": 1,
-            "volumes": [
-                {
-                    "bind": "/portainer/Files/AppData/Config/Cardigann",
-                    "container": "/config"
-                }
-            ]
+            "volumes": [{
+                "bind": "/portainer/Files/AppData/Config/Cardigann",
+                "container": "/config"
+            }]
         },
         {
             "categories": [
@@ -1744,8 +1736,7 @@
                 "Tools"
             ],
             "description": "Code-server is VS Code running on a remote server, accessible through the browser.",
-            "env": [
-                {
+            "env": [{
                     "default": "1000",
                     "label": "PUID",
                     "name": "PUID"
@@ -1783,20 +1774,17 @@
             "restart_policy": "unless-stopped",
             "title": "Code Server",
             "type": 1,
-            "volumes": [
-                {
-                    "bind": "/portainer/Files/AppData/Config/Code-Server",
-                    "container": "/config"
-                }
-            ]
+            "volumes": [{
+                "bind": "/portainer/Files/AppData/Config/Code-Server",
+                "container": "/config"
+            }]
         },
         {
             "categories": [
                 "Productivity"
             ],
             "description": "Codiad is a web-based IDE framework with a small footprint and minimal requirements.\n  ",
-            "env": [
-                {
+            "env": [{
                     "default": "1000",
                     "label": "PUID",
                     "name": "PUID"
@@ -1817,12 +1805,10 @@
             "restart_policy": "unless-stopped",
             "title": "Codiad",
             "type": 1,
-            "volumes": [
-                {
-                    "bind": "/portainer/Files/AppData/Config/Codiad",
-                    "container": "/config"
-                }
-            ]
+            "volumes": [{
+                "bind": "/portainer/Files/AppData/Config/Codiad",
+                "container": "/config"
+            }]
         },
         {
             "categories": [
@@ -1830,8 +1816,7 @@
                 "Books"
             ],
             "description": "COPS links to your Calibre library database and allows downloading and emailing of books directly from a web browser and provides a OPDS feed to connect to your devices.",
-            "env": [
-                {
+            "env": [{
                     "default": "1000",
                     "label": "PUID",
                     "name": "PUID"
@@ -1852,8 +1837,7 @@
             "restart_policy": "unless-stopped",
             "title": "COPS",
             "type": 1,
-            "volumes": [
-                {
+            "volumes": [{
                     "bind": "/portainer/Books",
                     "container": "/books"
                 },
@@ -1869,8 +1853,7 @@
                 "Video"
             ],
             "description": "CouchPotato (CP) is an automatic NZB and torrent downloader. You can keep a \"movies I want\"-list and it will search for NZBs/torrents of these movies every X hours. Once a movie is found, it will send it to SABnzbd or download the torrent to a specified directory.",
-            "env": [
-                {
+            "env": [{
                     "default": "1000",
                     "label": "PUID",
                     "name": "PUID"
@@ -1891,8 +1874,7 @@
             "restart_policy": "unless-stopped",
             "title": "CouchPotato",
             "type": 1,
-            "volumes": [
-                {
+            "volumes": [{
                     "bind": "/portainer/Files/AppData/Config/Couchpotato",
                     "container": "/config"
                 },
@@ -1911,8 +1893,7 @@
                 "Music"
             ],
             "description": "DAAP (iTunes) media server with support for AirPlay devices, Apple Remote (and compatibles), MPD and internet radio.",
-            "env": [
-                {
+            "env": [{
                     "default": "1000",
                     "label": "PUID",
                     "name": "PUID"
@@ -1930,8 +1911,7 @@
             "restart_policy": "unless-stopped",
             "title": "Daapd",
             "type": 1,
-            "volumes": [
-                {
+            "volumes": [{
                     "bind": "/portainer/Files/AppData/Config/Daapd",
                     "container": "/config"
                 },
@@ -1957,12 +1937,10 @@
             "restart_policy": "unless-stopped",
             "title": "DashMachine",
             "type": 1,
-            "volumes": [
-                {
-                    "bind": "/portainer/Files/AppData/Config/Dashmachine",
-                    "container": "/dashmachine/dashmachine/user_data"
-                }
-            ]
+            "volumes": [{
+                "bind": "/portainer/Files/AppData/Config/Dashmachine",
+                "container": "/dashmachine/dashmachine/user_data"
+            }]
         },
         {
             "categories": [
@@ -1971,8 +1949,7 @@
                 "Tools"
             ],
             "description": "davos is an FTP automation tool that periodically scans given host locations for new files. It can be configured for various purposes, including listening for specific files to appear in the host location, ready for it to download and then move, if required. It also supports completion notifications as well as downstream API calls, to further the workflow.\r\n\r\n/config : AppData Location\r\n/download : File Download Location",
-            "env": [
-                {
+            "env": [{
                     "default": "1000",
                     "label": "PUID",
                     "name": "PUID"
@@ -1993,8 +1970,7 @@
             "restart_policy": "unless-stopped",
             "title": "Davos",
             "type": 1,
-            "volumes": [
-                {
+            "volumes": [{
                     "bind": "/portainer/Files/AppData/Config/Davos",
                     "container": "/config"
                 },
@@ -2021,8 +1997,7 @@
             "restart_policy": "unless-stopped",
             "title": "DeeMix",
             "type": 1,
-            "volumes": [
-                {
+            "volumes": [{
                     "bind": "/portainer/Files/AppData/Config/DeeMix",
                     "container": "/config"
                 },
@@ -2037,8 +2012,7 @@
                 "Downloaders"
             ],
             "description": "Deluge is a lightweight, Free Software, cross-platform BitTorrent client providing: Full Encryption, WebUI, Plugin System, Much more...",
-            "env": [
-                {
+            "env": [{
                     "default": "1000",
                     "label": "PUID",
                     "name": "PUID"
@@ -2061,8 +2035,7 @@
             "restart_policy": "unless-stopped",
             "title": "Deluge",
             "type": 1,
-            "volumes": [
-                {
+            "volumes": [{
                     "bind": "/portainer/Files/AppData/Config/Deluge",
                     "container": "/config"
                 },
@@ -2078,8 +2051,7 @@
                 "Management"
             ],
             "description": "Domoticz is a Home Automation System that lets you monitor and configure various devices like: Lights, Switches, various sensors/meters like Temperature, Rain, Wind, UV, Electra, Gas, Water and much more. Notifications/Alerts can be sent to any mobile device",
-            "env": [
-                {
+            "env": [{
                     "default": "1000",
                     "label": "PUID",
                     "name": "PUID"
@@ -2102,12 +2074,10 @@
             "restart_policy": "unless-stopped",
             "title": "Domoticz",
             "type": 1,
-            "volumes": [
-                {
-                    "bind": "/portainer/Files/AppData/Config/Domoticz",
-                    "container": "/config"
-                }
-            ]
+            "volumes": [{
+                "bind": "/portainer/Files/AppData/Config/Domoticz",
+                "container": "/config"
+            }]
         },
         {
             "categories": [
@@ -2115,8 +2085,7 @@
                 "Tools"
             ],
             "description": "Duck DNS is a free service which will point a DNS (sub domains of duckdns.org) to an IP of your choice. The service is completely free, and doesn't require reactivation or forum posts to maintain its existence.\r\n\r\nFirst, go to duckdns site, register your subdomain and retrieve your token\r\nThen run the docker create command above with your subdomain(s) and token\r\nIt will update your IP with the DuckDNS service every 5 minutes\r\n\r\n",
-            "env": [
-                {
+            "env": [{
                     "label": "SUBDOMAINS",
                     "name": "SUBDOMAINS",
                     "set": ""
@@ -2154,8 +2123,7 @@
                 "Tools"
             ],
             "description": "Free backup software to store encrypted backups online, Duplicati works with standard protocols like FTP, SSH, WebDAV as well as popular services like Microsoft OneDrive, Amazon Cloud Drive and S3, Google Drive, box.com, Mega, hubiC and many others.",
-            "env": [
-                {
+            "env": [{
                     "default": "1000",
                     "label": "PUID",
                     "name": "PUID"
@@ -2176,8 +2144,7 @@
             "restart_policy": "unless-stopped",
             "title": "Duplicati",
             "type": 1,
-            "volumes": [
-                {
+            "volumes": [{
                     "bind": "/portainer/Files/AppData/Config/Duplicati",
                     "container": "/config"
                 },
@@ -2199,8 +2166,7 @@
                 "Photos"
             ],
             "description": "Emby organizes video, music, live TV, and photos from personal media libraries and streams them to smart TVs, streaming boxes and mobile devices. This container is packaged as a standalone emby Media Server.",
-            "env": [
-                {
+            "env": [{
                     "default": "1000",
                     "label": "PUID",
                     "name": "PUID"
@@ -2226,8 +2192,7 @@
             "restart_policy": "unless-stopped",
             "title": "Emby",
             "type": 1,
-            "volumes": [
-                {
+            "volumes": [{
                     "bind": "/portainer/Files/AppData/Config/Emby",
                     "container": "/config"
                 },
@@ -2244,38 +2209,37 @@
         {
             "categories": [
                 "Other",
-                "Tools"
+                "Tools",
+                "filesystem",
+                "storage"
             ],
             "description": "Web File Browser which can be used as a middleware or standalone app.",
-            "image": "80x86/filebrowser:latest",
+            "image": "filebrowser/filebrowser:latest",
             "logo": "https://raw.githubusercontent.com/SelfhostedPro/selfhosted_templates/master/Images/filebrowser.png",
             "name": "filebrowser",
             "note": "The default user and password is admin/admin.",
             "platform": "linux",
             "ports": [
-                "8082:8082/tcp"
+                "80/tcp"
             ],
             "restart_policy": "unless-stopped",
             "title": "FileBrowser",
             "type": 1,
-            "volumes": [
-                {
-                    "bind": "/portainer/Files/AppData/Config/FileBrowser",
-                    "container": "/config"
+            "volumes": [{
+                    "container": "/data"
                 },
                 {
-                    "bind": "/portainer/Files/AppData/Config",
-                    "container": "/myfiles"
+                    "container": "/srv"
                 }
-            ]
+            ],
+            "command": "--port 80 --database /data/database.db --root /srv"
         },
         {
             "categories": [
                 "Other"
             ],
             "description": "A free, self-hostable rss aggregator…",
-            "env": [
-                {
+            "env": [{
                     "default": "1000",
                     "label": "PUID",
                     "name": "PUID"
@@ -2296,12 +2260,10 @@
             "restart_policy": "unless-stopped",
             "title": "FreshRSS",
             "type": 1,
-            "volumes": [
-                {
-                    "bind": "/portainer/Files/AppData/Config/freshrss",
-                    "container": "/config"
-                }
-            ]
+            "volumes": [{
+                "bind": "/portainer/Files/AppData/Config/freshrss",
+                "container": "/config"
+            }]
         },
         {
             "categories": [
@@ -2310,8 +2272,7 @@
                 "Tools"
             ],
             "description": "A WebApp Comic Reader for your favorite digital comics. Reach and read your comic library from any web connected device with a modern web browser",
-            "env": [
-                {
+            "env": [{
                     "default": "1000",
                     "label": "PUID",
                     "name": "PUID"
@@ -2329,8 +2290,7 @@
             "restart_policy": "unless-stopped",
             "title": "Gazee",
             "type": 1,
-            "volumes": [
-                {
+            "volumes": [{
                     "bind": "/portainer/Files/AppData/Config/Gazee",
                     "container": "/config"
                 },
@@ -2351,8 +2311,7 @@
                 "Finance"
             ],
             "description": "Grocy is an ERP system for your kitchen! Cut down on food waste, and manage your chores with this brilliant utulity.",
-            "env": [
-                {
+            "env": [{
                     "default": "1000",
                     "label": "PUID",
                     "name": "PUID"
@@ -2377,12 +2336,10 @@
             "restart_policy": "unless-stopped",
             "title": "Grocy",
             "type": 1,
-            "volumes": [
-                {
-                    "bind": "/portainer/Files/AppData/Config/Grocy",
-                    "container": "/config"
-                }
-            ]
+            "volumes": [{
+                "bind": "/portainer/Files/AppData/Config/Grocy",
+                "container": "/config"
+            }]
         },
         {
             "categories": [
@@ -2401,12 +2358,10 @@
             "restart_policy": "unless-stopped",
             "title": "Guacamole",
             "type": 1,
-            "volumes": [
-                {
-                    "bind": "/portainer/Files/AppData/Config/Guacamole",
-                    "container": "/config"
-                }
-            ]
+            "volumes": [{
+                "bind": "/portainer/Files/AppData/Config/Guacamole",
+                "container": "/config"
+            }]
         },
         {
             "categories": [
@@ -2415,8 +2370,7 @@
                 "Other"
             ],
             "description": "HTPC Manaager, a front end for many htpc related applications. Hellowlol version.",
-            "env": [
-                {
+            "env": [{
                     "default": "1000",
                     "label": "PUID",
                     "name": "PUID"
@@ -2437,12 +2391,10 @@
             "restart_policy": "unless-stopped",
             "title": "HTPC Manager",
             "type": 1,
-            "volumes": [
-                {
-                    "bind": "/portainer/Files/AppData/Config/HTPCmanager",
-                    "container": "/config"
-                }
-            ]
+            "volumes": [{
+                "bind": "/portainer/Files/AppData/Config/HTPCmanager",
+                "container": "/config"
+            }]
         },
         {
             "categories": [
@@ -2450,8 +2402,7 @@
                 "Music"
             ],
             "description": "Lidarr is a music collection manager for Usenet and BitTorrent users.",
-            "env": [
-                {
+            "env": [{
                     "default": "1000",
                     "label": "PUID",
                     "name": "PUID"
@@ -2472,8 +2423,7 @@
             "restart_policy": "unless-stopped",
             "title": "lidarr",
             "type": 1,
-            "volumes": [
-                {
+            "volumes": [{
                     "bind": "/portainer/Files/AppData/Config/Lidarr",
                     "container": "/config"
                 },
@@ -2508,8 +2458,7 @@
             "restart_policy": "unless-stopped",
             "title": "Pi-Hole",
             "type": 1,
-            "volumes": [
-                {
+            "volumes": [{
                     "bind": "/portainer/Files/AppData/Config/PiHole",
                     "container": "/etc/pihole"
                 },
@@ -2524,8 +2473,7 @@
                 "Photos"
             ],
             "description": "Piwigo is photo gallery software for the web, built by an active community of users and developers.",
-            "env": [
-                {
+            "env": [{
                     "default": "1000",
                     "label": "PUID",
                     "name": "PUID"
@@ -2546,12 +2494,10 @@
             "restart_policy": "unless-stopped",
             "title": "Piwigo",
             "type": 1,
-            "volumes": [
-                {
-                    "bind": "/portainer/Files/AppData/Config/PiWigo",
-                    "container": "/config"
-                }
-            ]
+            "volumes": [{
+                "bind": "/portainer/Files/AppData/Config/PiWigo",
+                "container": "/config"
+            }]
         },
         {
             "categories": [
@@ -2560,8 +2506,7 @@
                 "Photos"
             ],
             "description": "Your favorite movies, TV, music, web shows, podcasts, and more, all streamed to your favorite screens.",
-            "env": [
-                {
+            "env": [{
                     "default": "1000",
                     "label": "PUID",
                     "name": "PUID"
@@ -2585,8 +2530,7 @@
             "restart_policy": "unless-stopped",
             "title": "Plex",
             "type": 1,
-            "volumes": [
-                {
+            "volumes": [{
                     "bind": "/portainer/Files/AppData/Config/Plex",
                     "container": "/config"
                 },
@@ -2608,8 +2552,7 @@
                 "Tools"
             ],
             "description": "Simple automated way for users to request new content for Plex.",
-            "env": [
-                {
+            "env": [{
                     "default": "1000",
                     "label": "PUID",
                     "name": "PUID"
@@ -2635,12 +2578,10 @@
             "restart_policy": "unless-stopped",
             "title": "Plex Requests",
             "type": 1,
-            "volumes": [
-                {
-                    "bind": "/portainer/Files/AppData/Config/PlexRequests",
-                    "container": "/config"
-                }
-            ]
+            "volumes": [{
+                "bind": "/portainer/Files/AppData/Config/PlexRequests",
+                "container": "/config"
+            }]
         },
         {
             "categories": [
@@ -2650,8 +2591,7 @@
                 "Other"
             ],
             "description": "ProjectSend is a self-hosted application that lets you upload files and assign them to specific clients that you create yourself! Secure, private and easy. No more depending on external services or e-mail to send those files!\n  ",
-            "env": [
-                {
+            "env": [{
                     "default": "1000",
                     "label": "PUID",
                     "name": "PUID"
@@ -2672,8 +2612,7 @@
             "restart_policy": "unless-stopped",
             "title": "ProjectSend",
             "type": 1,
-            "volumes": [
-                {
+            "volumes": [{
                     "bind": "/portainer/Files/AppData/ProjectSend",
                     "container": "/data"
                 },
@@ -2703,12 +2642,10 @@
             "restart_policy": "unless-stopped",
             "title": "ProtonMail Bridge",
             "type": 1,
-            "volumes": [
-                {
-                    "bind": "/portainer/Files/AppData/ProtonMail-Bridge",
-                    "container": "/root"
-                }
-            ]
+            "volumes": [{
+                "bind": "/portainer/Files/AppData/ProtonMail-Bridge",
+                "container": "/root"
+            }]
         },
         {
             "categories": [
@@ -2718,8 +2655,7 @@
                 "Web"
             ],
             "description": "Pritunl container built on Alpine Linux. Supports IPv6 and running behind a reverse proxy. This container requires an external Mongo DB and should be run via Docker Compose or other orchestration.",
-            "env": [
-                {
+            "env": [{
                     "default": "false",
                     "label": "REVERSE_PROXY",
                     "name": "REVERSE_PROXY"
@@ -2739,7 +2675,7 @@
                     "name": "WIREGUARD"
                 }
             ],
-            "logo": "https://raw.githubusercontent.com/SelfhostedPro/selfhosted_templates/pritunl/Images/pritunl.png",
+            "logo": "https://pritunl.com/img/pritunl_logo0.png",
             "name": "pritunl",
             "note": "Documentation on this containier can be found here: \u003ca href=https://hub.docker.com/r/goofball222/pritunl\u003ehttps://hub.docker.com/r/goofball222/pritunl\u003c/a\u003e",
             "platform": "linux",
@@ -2756,8 +2692,7 @@
                 "Other"
             ],
             "description": "Pydio (formerly AjaXplorer) is a mature open source software solution for file sharing and synchronization. With intuitive user interfaces (web / mobile / desktop), Pydio provides enterprise-grade features to gain back control and privacy of your data: user directory connectors, legacy filesystems drivers, comprehensive admin interface, and much more.",
-            "env": [
-                {
+            "env": [{
                     "default": "1000",
                     "label": "PUID",
                     "name": "PUID"
@@ -2778,8 +2713,7 @@
             "restart_policy": "unless-stopped",
             "title": "Pydio",
             "type": 1,
-            "volumes": [
-                {
+            "volumes": [{
                     "bind": "/portainer/Files/AppData/Config/Pydio",
                     "container": "/config"
                 },
@@ -2794,8 +2728,7 @@
                 "Downloaders"
             ],
             "description": "The qBittorrent project aims to provide an open-source software alternative to µTorrent. qBittorrent is based on the Qt toolkit and libtorrent-rasterbar library.",
-            "env": [
-                {
+            "env": [{
                     "default": "1000",
                     "label": "PUID",
                     "name": "PUID"
@@ -2818,8 +2751,7 @@
             "restart_policy": "unless-stopped",
             "title": "qBittorrent",
             "type": 1,
-            "volumes": [
-                {
+            "volumes": [{
                     "bind": "/portainer/Files/AppData/Config/qBittorrent",
                     "container": "/config"
                 },
@@ -2834,8 +2766,7 @@
                 "Messenger"
             ],
             "description": "Quassel IRC is a modern, cross-platform, distributed IRC client, meaning that one (or multiple) client(s) can attach to and detach from a central core -- much like the popular combination of screen and a text-based IRC client such as WeeChat, but graphical. Blowfish support and optional web-ui included.",
-            "env": [
-                {
+            "env": [{
                     "default": "1000",
                     "label": "PUID",
                     "name": "PUID"
@@ -2856,12 +2787,10 @@
             "restart_policy": "unless-stopped",
             "title": "Quassel IRC",
             "type": 1,
-            "volumes": [
-                {
-                    "bind": "/portainer/Files/AppData/Config/Quassel-core",
-                    "container": "/config"
-                }
-            ]
+            "volumes": [{
+                "bind": "/portainer/Files/AppData/Config/Quassel-core",
+                "container": "/config"
+            }]
         },
         {
             "categories": [
@@ -2869,8 +2798,7 @@
                 "Video"
             ],
             "description": "Radarr - A fork of Sonarr to work with movies à la Couchpotato.",
-            "env": [
-                {
+            "env": [{
                     "default": "1000",
                     "label": "PUID",
                     "name": "PUID"
@@ -2891,8 +2819,7 @@
             "restart_policy": "unless-stopped",
             "title": "Radarr",
             "type": 1,
-            "volumes": [
-                {
+            "volumes": [{
                     "bind": "/portainer/Files/AppData/Config/Radarr",
                     "container": "/config"
                 },
@@ -2922,12 +2849,10 @@
             "restart_policy": "unless-stopped",
             "title": "Reactive-Resume",
             "type": 1,
-            "volumes": [
-                {
-                    "bind": "/portainer/Files/AppData/Config/ReactiveResume",
-                    "container": "/usr/src/app"
-                }
-            ]
+            "volumes": [{
+                "bind": "/portainer/Files/AppData/Config/ReactiveResume",
+                "container": "/usr/src/app"
+            }]
         },
         {
             "categories": [
@@ -2937,8 +2862,7 @@
                 "Tools"
             ],
             "description": "Resilio Sync (formerly BitTorrent Sync) uses the BitTorrent protocol to sync files and folders between all of your devices. There are both free and paid versions, this container supports both.",
-            "env": [
-                {
+            "env": [{
                     "default": "1000",
                     "label": "PUID",
                     "name": "PUID"
@@ -2956,8 +2880,7 @@
             "restart_policy": "unless-stopped",
             "title": "Resilio Sync",
             "type": 1,
-            "volumes": [
-                {
+            "volumes": [{
                     "bind": "/portainer/Files/AppData/Config/Resilio-Sync",
                     "container": "/config"
                 },
@@ -2975,8 +2898,7 @@
                 "Downloaders"
             ],
             "description": "Popular torrent client with a webui for ease of use.",
-            "env": [
-                {
+            "env": [{
                     "default": "1000",
                     "label": "PUID",
                     "name": "PUID"
@@ -2999,8 +2921,7 @@
             "restart_policy": "unless-stopped",
             "title": "ruTorrent",
             "type": 1,
-            "volumes": [
-                {
+            "volumes": [{
                     "bind": "/portainer/Files/AppData/Config/ruTorrent",
                     "container": "/config"
                 },
@@ -3015,8 +2936,7 @@
                 "Downloaders"
             ],
             "description": "SABnzbd makes Usenet as simple and streamlined as possible by automating everything we can. All you have to do is add an .nzb. SABnzbd takes over from there, where it will be automatically downloaded, verified, repaired, extracted and filed away with zero human interaction.",
-            "env": [
-                {
+            "env": [{
                     "default": "1000",
                     "label": "PUID",
                     "name": "PUID"
@@ -3038,8 +2958,7 @@
             "restart_policy": "unless-stopped",
             "title": "SABnzbd",
             "type": 1,
-            "volumes": [
-                {
+            "volumes": [{
                     "bind": "/portainer/Files/AppData/Config/Sabnzbd",
                     "container": "/config"
                 },
@@ -3060,7 +2979,7 @@
             ],
             "description": "Shiori is a simple bookmarks manager written in Go language. Intended as a simple clone of Pocket. You can use it as command line application or as web application.",
             "image": "radhifadlillah/shiori:latest",
-            "logo": "https://raw.githubusercontent.com/robocopAlpha/selfhosted_templates/master/Images/shiori-icon.png",
+            "logo": "https://avatars.githubusercontent.com/u/41993376?s=200&v=4",
             "name": "shiori",
             "platform": "linux",
             "ports": [
@@ -3069,12 +2988,10 @@
             "restart_policy": "unless-stopped",
             "title": "Shiori",
             "type": 1,
-            "volumes": [
-                {
-                    "bind": "/portainer/Files/AppData/Config/Shiori",
-                    "container": "/srv/shiori"
-                }
-            ]
+            "volumes": [{
+                "bind": "/portainer/Files/AppData/Config/Shiori",
+                "container": "/srv/shiori"
+            }]
         },
         {
             "categories": [
@@ -3082,8 +2999,7 @@
                 "Video"
             ],
             "description": "Automatic Video Library Manager for TV Shows. It watches for new episodes of your favorite shows, and when they are posted it does its magic.",
-            "env": [
-                {
+            "env": [{
                     "default": "1000",
                     "label": "PUID",
                     "name": "PUID"
@@ -3104,8 +3020,7 @@
             "restart_policy": "unless-stopped",
             "title": "SickChill",
             "type": 1,
-            "volumes": [
-                {
+            "volumes": [{
                     "bind": "/portainer/Files/AppData/Config/SickChill",
                     "container": "/config"
                 },
@@ -3125,8 +3040,7 @@
                 "Video"
             ],
             "description": "SickGear provides management of TV shows and/or Anime, it detects new episodes, links downloader apps, and more.",
-            "env": [
-                {
+            "env": [{
                     "default": "1000",
                     "label": "PUID",
                     "name": "PUID"
@@ -3147,8 +3061,7 @@
             "restart_policy": "unless-stopped",
             "title": "SickGear",
             "type": 1,
-            "volumes": [
-                {
+            "volumes": [{
                     "bind": "/portainer/Files/AppData/Config/SickGear",
                     "container": "/config"
                 },
@@ -3167,8 +3080,7 @@
                 "Management"
             ],
             "description": null,
-            "env": [
-                {
+            "env": [{
                     "default": "1000",
                     "label": "PUID",
                     "name": "PUID"
@@ -3189,8 +3101,7 @@
             "restart_policy": "unless-stopped",
             "title": "SmokePing",
             "type": 1,
-            "volumes": [
-                {
+            "volumes": [{
                     "bind": "/portainer/Files/AppData/Config/Smokeping",
                     "container": "/config"
                 },
@@ -3206,8 +3117,7 @@
                 "Video"
             ],
             "description": "Sonarr (formerly NZBdrone) is a PVR for usenet and bittorrent users. It can monitor multiple RSS feeds for new episodes of your favorite shows and will grab, sort and rename them. It can also be configured to automatically upgrade the quality of files already downloaded when a better quality format becomes available.",
-            "env": [
-                {
+            "env": [{
                     "default": "1000",
                     "label": "PUID",
                     "name": "PUID"
@@ -3228,8 +3138,7 @@
             "restart_policy": "unless-stopped",
             "title": "Sonarr",
             "type": 1,
-            "volumes": [
-                {
+            "volumes": [{
                     "bind": "/portainer/Files/AppData/Config/Sonarr",
                     "container": "/config"
                 },
@@ -3255,8 +3164,7 @@
                 "Tools"
             ],
             "description": null,
-            "env": [
-                {
+            "env": [{
                     "default": "1000",
                     "label": "PUID",
                     "name": "PUID"
@@ -3279,8 +3187,7 @@
             "restart_policy": "unless-stopped",
             "title": "SyncThing",
             "type": 1,
-            "volumes": [
-                {
+            "volumes": [{
                     "bind": "/portainer/Files/AppData/Config/Syncthing",
                     "container": "/config"
                 },
@@ -3295,8 +3202,7 @@
                 "Tools"
             ],
             "description": "Tautulli is a 3rd party application that you can run along side your Plex Media Server to monitor activity and track various statistics. Most importantly, these statistics include what has been watched, who watched it, when and where they watched it, and how it was watched. All statistics are presented in a nice and clean interface with many tables and graphs, which makes it easy to brag about your server to everyone else.[br][br]\r\n  [b][u][span style='color: #E80000;']Configuration[/span][/u][/b][br]\r\n  [b]8181[/b] The webui for Tautulli's webui [br]\r\n  [b]/config[/b] Storing Configuration and the Tautulli database[br]\r\n[b]/logs[/b] Map to you plex logs (required for IP logging)[br]\r\n\r\n",
-            "env": [
-                {
+            "env": [{
                     "default": "1000",
                     "label": "PUID",
                     "name": "PUID"
@@ -3317,8 +3223,7 @@
             "restart_policy": "unless-stopped",
             "title": "Tautulli",
             "type": 1,
-            "volumes": [
-                {
+            "volumes": [{
                     "bind": "/portainer/Logs",
                     "container": "/logs"
                 },
@@ -3333,8 +3238,7 @@
                 "Messenger"
             ],
             "description": "A self-hosted web IRC client",
-            "env": [
-                {
+            "env": [{
                     "default": "1000",
                     "label": "PUID",
                     "name": "PUID"
@@ -3355,12 +3259,10 @@
             "restart_policy": "unless-stopped",
             "title": "TheLounge",
             "type": 1,
-            "volumes": [
-                {
-                    "bind": "/portainer/Files/AppData/Config/TheLounge",
-                    "container": "/config"
-                }
-            ]
+            "volumes": [{
+                "bind": "/portainer/Files/AppData/Config/TheLounge",
+                "container": "/config"
+            }]
         },
         {
             "categories": [
@@ -3378,20 +3280,17 @@
             "restart_policy": "unless-stopped",
             "title": "TiddlyWiki",
             "type": 1,
-            "volumes": [
-                {
-                    "bind": "/portainer/Files/AppData/Config/TiddlyWiki",
-                    "container": "/var/lib/tiddlywiki"
-                }
-            ]
+            "volumes": [{
+                "bind": "/portainer/Files/AppData/Config/TiddlyWiki",
+                "container": "/var/lib/tiddlywiki"
+            }]
         },
         {
             "categories": [
                 "Downloaders"
             ],
             "description": "Transmission is designed for easy, powerful use. Transmission has the features you want from a BitTorrent client: encryption, a web interface, peer exchange, magnet links, DHT, µTP, UPnP and NAT-PMP port forwarding, webseed support, watch directories, tracker editing, global and per-torrent speed limits, and more.",
-            "env": [
-                {
+            "env": [{
                     "default": "1000",
                     "label": "PUID",
                     "name": "PUID"
@@ -3413,8 +3312,7 @@
             "restart_policy": "unless-stopped",
             "title": "Transmission",
             "type": 1,
-            "volumes": [
-                {
+            "volumes": [{
                     "bind": "/portainer/Files/AppData/Config/Transmission",
                     "container": "/config"
                 },
@@ -3434,8 +3332,7 @@
                 "Tools"
             ],
             "description": "This container contains OpenVPN and Transmission with a configuration\nwhere Transmission is running only when OpenVPN has an active tunnel.\nIt bundles configuration files for many popular VPN providers to make the setup easier.",
-            "env": [
-                {
+            "env": [{
                     "default": "1000",
                     "label": "PUID",
                     "name": "PUID"
@@ -3478,8 +3375,7 @@
             "restart_policy": "unless-stopped",
             "title": "Transmission-OpenVPN",
             "type": 1,
-            "volumes": [
-                {
+            "volumes": [{
                     "bind": "/portainer/Downloads",
                     "container": "/data"
                 },
@@ -3494,8 +3390,7 @@
                 "Other"
             ],
             "description": "Tiny Tiny RSS is an open source web-based news feed (RSS/Atom) reader and aggregator, designed to allow you to read news from any location, while feeling as close to a real desktop application as possible.",
-            "env": [
-                {
+            "env": [{
                     "default": "1000",
                     "label": "PUID",
                     "name": "PUID"
@@ -3516,12 +3411,10 @@
             "restart_policy": "unless-stopped",
             "title": "Tiny Tiny RSS",
             "type": 1,
-            "volumes": [
-                {
-                    "bind": "/portainer/Files/AppData/Config/tt-rss",
-                    "container": "/config"
-                }
-            ]
+            "volumes": [{
+                "bind": "/portainer/Files/AppData/Config/tt-rss",
+                "container": "/config"
+            }]
         },
         {
             "categories": [
@@ -3529,8 +3422,7 @@
                 "Other"
             ],
             "description": "Tvheadend is a TV streaming server and recorder for Linux, FreeBSD and Android supporting DVB-S, DVB-S2, DVB-C, DVB-T, ATSC, ISDB-T, IPTV, SAT\u0026gt;IP and HDHomeRun as input sources.\r\nTvheadend offers the HTTP (VLC, MPlayer), HTSP (Kodi, Movian) and SAT\u0026gt;IP streaming.\r\nMultiple EPG sources are supported (over-the-air DVB and ATSC including OpenTV DVB extensions, XMLTV, PyXML).",
-            "env": [
-                {
+            "env": [{
                     "default": "1000",
                     "label": "PUID",
                     "name": "PUID"
@@ -3552,8 +3444,7 @@
             "restart_policy": "unless-stopped",
             "title": "Tvheadend",
             "type": 1,
-            "volumes": [
-                {
+            "volumes": [{
                     "bind": "/portainer/Files/AppData/Config/TVHeadend",
                     "container": "/config"
                 },
@@ -3568,8 +3459,7 @@
                 "Books"
             ],
             "description": "Ubooquity is a free, lightweight and easy-to-use home server for your comics and ebooks. Use it to access your files from anywhere, with a tablet, an e-reader, a phone or a computer.",
-            "env": [
-                {
+            "env": [{
                     "label": "MAXMEM",
                     "name": "MAXMEM",
                     "set": "512"
@@ -3596,8 +3486,7 @@
             "restart_policy": "unless-stopped",
             "title": "Ubooquity",
             "type": 1,
-            "volumes": [
-                {
+            "volumes": [{
                     "container": "/books"
                 },
                 {
@@ -3614,8 +3503,7 @@
                 "Tools"
             ],
             "description": null,
-            "env": [
-                {
+            "env": [{
                     "default": "1000",
                     "label": "PUID",
                     "name": "PUID"
@@ -3643,12 +3531,10 @@
             "restart_policy": "unless-stopped",
             "title": "UniFi Controller",
             "type": 1,
-            "volumes": [
-                {
-                    "bind": "/portainer/Files/AppData/Config/Unifi",
-                    "container": "/config"
-                }
-            ]
+            "volumes": [{
+                "bind": "/portainer/Files/AppData/Config/Unifi",
+                "container": "/config"
+            }]
         },
         {
             "categories": [
@@ -3665,20 +3551,17 @@
             "restart_policy": "unless-stopped",
             "title": "Watchtower",
             "type": 1,
-            "volumes": [
-                {
-                    "bind": "/var/run/docker.sock",
-                    "container": "/var/run/docker.sock"
-                }
-            ]
+            "volumes": [{
+                "bind": "/var/run/docker.sock",
+                "container": "/var/run/docker.sock"
+            }]
         },
         {
             "categories": [
                 "Downloaders"
             ],
             "description": "WebGrab+Plus is a multi-site incremental xmltv epg grabber. It collects tv-program guide data from selected tvguide sites for your favourite channels.[br]\r\n\t\tOptional postprocessors to add IMDb data or to customize your xmltv listing.[br]\r\n\t\thttp://www.webgrabplus.com/[br]\r\n\t\t[b][span style='color: #E80000;']Directions:[/span][/b][br]\r\n\t\t[b]/config[/b] : This is where WebGrab+Plus will store it's configuration.[br][br]\r\n\t\t[b]/data[/b] : This is where tv_grab_wg script in the Tvheadend container looks for the guide.xml file.[br][br]",
-            "env": [
-                {
+            "env": [{
                     "default": "1000",
                     "label": "PUID",
                     "name": "PUID"
@@ -3696,8 +3579,7 @@
             "restart_policy": "unless-stopped",
             "title": "WebGrab+Plus",
             "type": 1,
-            "volumes": [
-                {
+            "volumes": [{
                     "bind": "/portainer/Files/AppData/Config/WebGrabPlus",
                     "container": "/config"
                 },
@@ -3723,12 +3605,10 @@
             "restart_policy": "unless-stopped",
             "title": "Whoogle",
             "type": 1,
-            "volumes": [
-                {
-                    "bind": "/portainer/Files/AppData/Config/Whoogle",
-                    "container": "/config"
-                }
-            ]
+            "volumes": [{
+                "bind": "/portainer/Files/AppData/Config/Whoogle",
+                "container": "/config"
+            }]
         },
         {
             "categories": [
@@ -3746,8 +3626,7 @@
             "restart_policy": "unless-stopped",
             "title": "Wikijs",
             "type": 1,
-            "volumes": [
-                {
+            "volumes": [{
                     "bind": "/portainer/Files/AppData/Config/Wikijs",
                     "container": "/config"
                 },
@@ -3773,8 +3652,7 @@
             "restart_policy": "unless-stopped",
             "title": "YouTubeDL-Material",
             "type": 1,
-            "volumes": [
-                {
+            "volumes": [{
                     "bind": "/portainer/Files/AppData/Config/YTDLM",
                     "container": "/app/appdata"
                 },
@@ -3801,8 +3679,7 @@
                 "CCTV"
             ],
             "description": "UniFi Video is a powerful and flexible, integrated IP video management surveillance system designed to work with Ubiquiti’s UniFi Video Camera product line. UniFi Video has an intuitive, configurable, and feature‑packed user interface with advanced features such as motion detection, auto‑discovery, user‑level security, storage management, reporting, and mobile device support.",
-            "env": [
-                {
+            "env": [{
                     "default": "99",
                     "label": "PUID",
                     "name": "PUID"
@@ -3824,7 +3701,7 @@
                 }
             ],
             "image": "pducharme/unifi-video-controller:latest",
-            "logo": "https://raw.githubusercontent.com/SelfhostedPro/selfhosted_templates/master/Images/UniFiVideo-logo.png",
+            "logo": "https://theme.zdassets.com/theme_assets/77613/bc2b49c78f1defbd9c7ac74d012b08135fb5344b.svg",
             "name": "UniFi Video",
             "platform": "linux",
             "ports": [
@@ -3841,8 +3718,7 @@
             "restart_policy": "unless-stopped",
             "title": "UniFi Video",
             "type": 1,
-            "volumes": [
-                {
+            "volumes": [{
                     "bind": "/portainer/Files/AppData/Config/UnifFiVideo/Recordings/",
                     "container": "/recordings"
                 },
@@ -3868,8 +3744,7 @@
             "restart_policy": "unless-stopped",
             "title": "Yacht",
             "type": 1,
-            "volumes": [
-                {
+            "volumes": [{
                     "bind": "yacht",
                     "container": "/config"
                 },
@@ -3884,8 +3759,7 @@
                 "Messenger"
             ],
             "description": "ZNC is an IRC network bouncer or BNC. It can detach the client from the actual IRC server, and also from selected channels. Multiple clients from different locations can connect to a single ZNC account simultaneously and therefore appear under the same nickname on IRC.",
-            "env": [
-                {
+            "env": [{
                     "default": "1000",
                     "label": "PUID",
                     "name": "PUID"
@@ -3906,12 +3780,10 @@
             "restart_policy": "unless-stopped",
             "title": "ZNC",
             "type": 1,
-            "volumes": [
-                {
-                    "bind": "/portainer/Files/AppData/Config/ZNC",
-                    "container": "/config"
-                }
-            ]
+            "volumes": [{
+                "bind": "/portainer/Files/AppData/Config/ZNC",
+                "container": "/config"
+            }]
         },
         {
             "categories": [
@@ -3920,8 +3792,7 @@
                 "Tools"
             ],
             "description": "This container contains OpenVPN and Deluge with a configuration where Deluge is running only when OpenVPN has an active tunnel. It bundles configuration files for many popular VPN providers to make the setup easier.",
-            "env": [
-                {
+            "env": [{
                     "default": "1001",
                     "label": "PUID",
                     "name": "PUID"
@@ -3955,8 +3826,7 @@
             "restart_policy": "unless-stopped",
             "title": "Deluge openvpn",
             "type": 1,
-            "volumes": [
-                {
+            "volumes": [{
                     "bind": "/etc/localtime",
                     "container": "/etc/localtime"
                 },
@@ -3976,7 +3846,7 @@
             ],
             "description": "Dradis Framework: Collaboration and reporting for IT Security teams http://dradisframework.org",
             "image": "raesene/dradis:latest",
-            "logo": "https://raw.githubusercontent.com/SelfhostedPro/selfhosted_templates/master/Images/dradis-logo.png",
+            "logo": "https://dradisframework.com/images/logo_dradispro_letters.png",
             "name": "dradis",
             "platform": "linux",
             "ports": [
@@ -3999,11 +3869,9 @@
             "ports": [
                 "5000/tcp"
             ],
-            "volumes": [
-                {
-                    "container": "/var/lib/registry"
-                }
-            ]
+            "volumes": [{
+                "container": "/var/lib/registry"
+            }]
         },
         {
             "type": 1,
@@ -4019,8 +3887,7 @@
                 "80/tcp",
                 "443/tcp"
             ],
-            "volumes": [
-                {
+            "volumes": [{
                     "container": "/etc/nginx"
                 },
                 {
@@ -4041,11 +3908,9 @@
             "ports": [
                 "80/tcp"
             ],
-            "volumes": [
-                {
-                    "container": "/usr/local/apache2/htdocs/"
-                }
-            ]
+            "volumes": [{
+                "container": "/usr/local/apache2/htdocs/"
+            }]
         },
         {
             "type": 1,
@@ -4062,11 +3927,9 @@
                 "443/tcp",
                 "2015/tcp"
             ],
-            "volumes": [
-                {
-                    "container": "/root/.caddy"
-                }
-            ]
+            "volumes": [{
+                "container": "/root/.caddy"
+            }]
         },
         {
             "type": 1,
@@ -4078,20 +3941,16 @@
             "platform": "linux",
             "logo": "https://portainer-io-assets.sfo2.digitaloceanspaces.com/logos/mysql.png",
             "image": "mysql:latest",
-            "env": [
-                {
-                    "name": "MYSQL_ROOT_PASSWORD",
-                    "label": "Root password"
-                }
-            ],
+            "env": [{
+                "name": "MYSQL_ROOT_PASSWORD",
+                "label": "Root password"
+            }],
             "ports": [
                 "3306/tcp"
             ],
-            "volumes": [
-                {
-                    "container": "/var/lib/mysql"
-                }
-            ]
+            "volumes": [{
+                "container": "/var/lib/mysql"
+            }]
         },
         {
             "type": 1,
@@ -4103,20 +3962,16 @@
             "platform": "linux",
             "logo": "https://portainer-io-assets.sfo2.digitaloceanspaces.com/logos/mariadb.png",
             "image": "mariadb:latest",
-            "env": [
-                {
-                    "name": "MYSQL_ROOT_PASSWORD",
-                    "label": "Root password"
-                }
-            ],
+            "env": [{
+                "name": "MYSQL_ROOT_PASSWORD",
+                "label": "Root password"
+            }],
             "ports": [
                 "3306/tcp"
             ],
-            "volumes": [
-                {
-                    "container": "/var/lib/mysql"
-                }
-            ]
+            "volumes": [{
+                "container": "/var/lib/mysql"
+            }]
         },
         {
             "type": 1,
@@ -4128,8 +3983,7 @@
             "platform": "linux",
             "logo": "https://portainer-io-assets.sfo2.digitaloceanspaces.com/logos/postgres.png",
             "image": "postgres:latest",
-            "env": [
-                {
+            "env": [{
                     "name": "POSTGRES_USER",
                     "label": "Superuser"
                 },
@@ -4141,11 +3995,9 @@
             "ports": [
                 "5432/tcp"
             ],
-            "volumes": [
-                {
-                    "container": "/var/lib/postgresql/data"
-                }
-            ]
+            "volumes": [{
+                "container": "/var/lib/postgresql/data"
+            }]
         },
         {
             "type": 1,
@@ -4160,11 +4012,9 @@
             "ports": [
                 "27017/tcp"
             ],
-            "volumes": [
-                {
-                    "container": "/data/db"
-                }
-            ]
+            "volumes": [{
+                "container": "/data/db"
+            }]
         },
         {
             "type": 1,
@@ -4180,11 +4030,9 @@
                 "26257/tcp",
                 "8080/tcp"
             ],
-            "volumes": [
-                {
-                    "container": "/cockroach/cockroach-data"
-                }
-            ],
+            "volumes": [{
+                "container": "/cockroach/cockroach-data"
+            }],
             "command": "start --insecure"
         },
         {
@@ -4201,11 +4049,9 @@
                 "4200/tcp",
                 "4300/tcp"
             ],
-            "volumes": [
-                {
-                    "container": "/data"
-                }
-            ]
+            "volumes": [{
+                "container": "/data"
+            }]
         },
         {
             "type": 1,
@@ -4221,11 +4067,9 @@
                 "9200/tcp",
                 "9300/tcp"
             ],
-            "volumes": [
-                {
-                    "container": "/usr/share/elasticsearch/data"
-                }
-            ]
+            "volumes": [{
+                "container": "/usr/share/elasticsearch/data"
+            }]
         },
         {
             "type": 1,
@@ -4244,8 +4088,7 @@
                 "443/tcp",
                 "22/tcp"
             ],
-            "volumes": [
-                {
+            "volumes": [{
                     "container": "/etc/gitlab"
                 },
                 {
@@ -4269,8 +4112,7 @@
             "ports": [
                 "9000/tcp"
             ],
-            "env": [
-                {
+            "env": [{
                     "name": "MINIO_ACCESS_KEY",
                     "label": "Minio access key"
                 },
@@ -4279,8 +4121,7 @@
                     "label": "Minio secret key"
                 }
             ],
-            "volumes": [
-                {
+            "volumes": [{
                     "container": "/data"
                 },
                 {
@@ -4302,8 +4143,7 @@
             "ports": [
                 "8000/tcp"
             ],
-            "env": [
-                {
+            "env": [{
                     "name": "SCALITY_ACCESS_KEY",
                     "label": "Scality S3 access key"
                 },
@@ -4312,8 +4152,7 @@
                     "label": "Scality S3 secret key"
                 }
             ],
-            "volumes": [
-                {
+            "volumes": [{
                     "container": "/usr/src/app/localData"
                 },
                 {
@@ -4335,44 +4174,13 @@
             "ports": [
                 "1433/tcp"
             ],
-            "env": [
-                {
+            "env": [{
                     "name": "ACCEPT_EULA",
                     "set": "Y"
                 },
                 {
                     "name": "SA_PASSWORD",
                     "label": "SA password"
-                }
-            ]
-        },
-        {
-            "type": 1,
-            "title": "SQL Server",
-            "description": "Microsoft SQL Server Developer for Windows containers",
-            "categories": [
-                "database"
-            ],
-            "platform": "windows",
-            "note": "Password needs to include at least 8 characters including uppercase, lowercase letters, base-10 digits and/or non-alphanumeric symbols.",
-            "logo": "https://portainer-io-assets.sfo2.digitaloceanspaces.com/logos/microsoft.png",
-            "image": "microsoft/mssql-server-windows-developer:latest",
-            "ports": [
-                "1433/tcp"
-            ],
-            "env": [
-                {
-                    "name": "ACCEPT_EULA",
-                    "set": "Y"
-                },
-                {
-                    "name": "sa_password",
-                    "label": "SA password"
-                }
-            ],
-            "volumes": [
-                {
-                    "container": "C:/temp/"
                 }
             ]
         },
@@ -4390,8 +4198,7 @@
             "ports": [
                 "1433/tcp"
             ],
-            "env": [
-                {
+            "env": [{
                     "name": "ACCEPT_EULA",
                     "set": "Y"
                 },
@@ -4400,11 +4207,9 @@
                     "label": "SA password"
                 }
             ],
-            "volumes": [
-                {
-                    "container": "C:/temp/"
-                }
-            ]
+            "volumes": [{
+                "container": "C:/temp/"
+            }]
         },
         {
             "type": 1,
@@ -4419,11 +4224,9 @@
             "ports": [
                 "8080/tcp"
             ],
-            "volumes": [
-                {
-                    "container": "/app/data"
-                }
-            ],
+            "volumes": [{
+                "container": "/app/data"
+            }],
             "privileged": true
         },
         {
@@ -4439,17 +4242,13 @@
             "ports": [
                 "4000/tcp"
             ],
-            "volumes": [
-                {
-                    "container": "/app/data"
-                }
-            ],
-            "env": [
-                {
-                    "name": "API_URL",
-                    "label": "API URL"
-                }
-            ],
+            "volumes": [{
+                "container": "/app/data"
+            }],
+            "env": [{
+                "name": "API_URL",
+                "label": "API URL"
+            }],
             "privileged": true
         },
         {
@@ -4465,11 +4264,9 @@
             "ports": [
                 "8983/tcp"
             ],
-            "volumes": [
-                {
-                    "container": "/opt/solr/mydata"
-                }
-            ]
+            "volumes": [{
+                "container": "/opt/solr/mydata"
+            }]
         },
         {
             "type": 1,
@@ -4484,11 +4281,9 @@
             "ports": [
                 "6379/tcp"
             ],
-            "volumes": [
-                {
-                    "container": "/data"
-                }
-            ]
+            "volumes": [{
+                "container": "/data"
+            }]
         },
         {
             "type": 1,
@@ -4504,11 +4299,9 @@
                 "5671/tcp",
                 "5672/tcp"
             ],
-            "volumes": [
-                {
-                    "container": "/var/lib/rabbitmq"
-                }
-            ]
+            "volumes": [{
+                "container": "/var/lib/rabbitmq"
+            }]
         },
         {
             "type": 1,
@@ -4524,11 +4317,9 @@
             "ports": [
                 "2368/tcp"
             ],
-            "volumes": [
-                {
-                    "container": "/var/lib/ghost/content"
-                }
-            ]
+            "volumes": [{
+                "container": "/var/lib/ghost/content"
+            }]
         },
         {
             "type": 1,
@@ -4560,8 +4351,7 @@
             "platform": "linux",
             "logo": "https://portainer-io-assets.sfo2.digitaloceanspaces.com/logos/joomla.png",
             "image": "joomla:latest",
-            "env": [
-                {
+            "env": [{
                     "name": "JOOMLA_DB_HOST",
                     "label": "MySQL database host",
                     "type": "container"
@@ -4574,11 +4364,9 @@
             "ports": [
                 "80/tcp"
             ],
-            "volumes": [
-                {
-                    "container": "/var/www/html"
-                }
-            ]
+            "volumes": [{
+                "container": "/var/www/html"
+            }]
         },
         {
             "type": 1,
@@ -4593,11 +4381,9 @@
             "ports": [
                 "80/tcp"
             ],
-            "volumes": [
-                {
-                    "container": "/var/www/html"
-                }
-            ]
+            "volumes": [{
+                "container": "/var/www/html"
+            }]
         },
         {
             "type": 1,
@@ -4612,11 +4398,9 @@
             "ports": [
                 "8080/tcp"
             ],
-            "volumes": [
-                {
-                    "container": "/data"
-                }
-            ]
+            "volumes": [{
+                "container": "/data"
+            }]
         },
         {
             "type": 1,
@@ -4633,11 +4417,9 @@
                 "3000/tcp",
                 "3001/tcp"
             ],
-            "volumes": [
-                {
-                    "container": "/var/www/html/"
-                }
-            ]
+            "volumes": [{
+                "container": "/var/www/html/"
+            }]
         },
         {
             "type": 1,
@@ -4652,8 +4434,7 @@
             "image": "sematext/sematext-agent-docker:latest",
             "name": "sematext-agent",
             "privileged": true,
-            "env": [
-                {
+            "env": [{
                     "name": "LOGSENE_TOKEN",
                     "label": "Logs token"
                 },
@@ -4662,12 +4443,10 @@
                     "label": "SPM monitoring token"
                 }
             ],
-            "volumes": [
-                {
-                    "container": "/var/run/docker.sock",
-                    "bind": "/var/run/docker.sock"
-                }
-            ]
+            "volumes": [{
+                "container": "/var/run/docker.sock",
+                "bind": "/var/run/docker.sock"
+            }]
         },
         {
             "type": 1,
@@ -4679,14 +4458,11 @@
             "platform": "linux",
             "logo": "https://portainer-io-assets.sfo2.digitaloceanspaces.com/logos/datadog_agent.png",
             "image": "datadog/agent:latest",
-            "env": [
-                {
-                    "name": "DD_API_KEY",
-                    "label": "Datadog API key"
-                }
-            ],
-            "volumes": [
-                {
+            "env": [{
+                "name": "DD_API_KEY",
+                "label": "Datadog API key"
+            }],
+            "volumes": [{
                     "container": "/var/run/docker.sock",
                     "bind": "/var/run/docker.sock",
                     "readonly": true
@@ -4713,8 +4489,7 @@
             "platform": "linux",
             "logo": "https://portainer-io-assets.sfo2.digitaloceanspaces.com/logos/mautic.png",
             "image": "mautic/mautic:latest",
-            "env": [
-                {
+            "env": [{
                     "name": "MAUTIC_DB_HOST",
                     "label": "MySQL database host",
                     "type": "container"
@@ -4727,11 +4502,9 @@
             "ports": [
                 "80/tcp"
             ],
-            "volumes": [
-                {
-                    "container": "/var/www/html"
-                }
-            ]
+            "volumes": [{
+                "container": "/var/www/html"
+            }]
         },
         {
             "type": 1,
@@ -4743,8 +4516,7 @@
             "platform": "linux",
             "logo": "https://portainer-io-assets.sfo2.digitaloceanspaces.com/logos/wowza.png",
             "image": "sameersbn/wowza:4.1.2-8",
-            "env": [
-                {
+            "env": [{
                     "name": "WOWZA_ACCEPT_LICENSE",
                     "label": "Agree to Wowza EULA",
                     "set": "yes"
@@ -4760,11 +4532,9 @@
                 "8087/tcp",
                 "8088/tcp"
             ],
-            "volumes": [
-                {
-                    "container": "/var/lib/wowza"
-                }
-            ]
+            "volumes": [{
+                "container": "/var/lib/wowza"
+            }]
         },
         {
             "type": 1,
@@ -4780,17 +4550,13 @@
                 "8080/tcp",
                 "50000/tcp"
             ],
-            "env": [
-                {
-                    "name": "JENKINS_OPTS",
-                    "label": "Jenkins options"
-                }
-            ],
-            "volumes": [
-                {
-                    "container": "/var/jenkins_home"
-                }
-            ]
+            "env": [{
+                "name": "JENKINS_OPTS",
+                "label": "Jenkins options"
+            }],
+            "volumes": [{
+                "container": "/var/jenkins_home"
+            }]
         },
         {
             "type": 1,
@@ -4805,11 +4571,9 @@
             "ports": [
                 "3000/tcp"
             ],
-            "volumes": [
-                {
-                    "container": "/usr/src/redmine/files"
-                }
-            ]
+            "volumes": [{
+                "container": "/usr/src/redmine/files"
+            }]
         },
         {
             "type": 1,
@@ -4821,8 +4585,7 @@
             "platform": "linux",
             "logo": "https://portainer-io-assets.sfo2.digitaloceanspaces.com/logos/odoo.png",
             "image": "odoo:latest",
-            "env": [
-                {
+            "env": [{
                     "name": "HOST",
                     "label": "PostgreSQL database host",
                     "type": "container"
@@ -4839,8 +4602,7 @@
             "ports": [
                 "8069/tcp"
             ],
-            "volumes": [
-                {
+            "volumes": [{
                     "container": "/var/lib/odoo"
                 },
                 {
@@ -4865,36 +4627,9 @@
                 "55415/tcp",
                 "35622/tcp"
             ],
-            "volumes": [
-                {
-                    "container": "/var/urbackup"
-                }
-            ]
-        },
-        {
-            "type": 1,
-            "title": "File browser",
-            "description": "A web file manager",
-            "note": "Default credentials: admin/admin",
-            "categories": [
-                "filesystem",
-                "storage"
-            ],
-            "platform": "linux",
-            "logo": "https://portainer-io-assets.sfo2.digitaloceanspaces.com/logos/filebrowser.png",
-            "image": "filebrowser/filebrowser:latest",
-            "ports": [
-                "80/tcp"
-            ],
-            "volumes": [
-                {
-                    "container": "/data"
-                },
-                {
-                    "container": "/srv"
-                }
-            ],
-            "command": "--port 80 --database /data/database.db --root /srv"
+            "volumes": [{
+                "container": "/var/urbackup"
+            }]
         },
         {
             "type": 1,
@@ -4906,12 +4641,10 @@
             "platform": "linux",
             "logo": "https://portainer-io-assets.sfo2.digitaloceanspaces.com/logos/ortussolutions-commandbox.png",
             "image": "ortussolutions/commandbox:latest",
-            "env": [
-                {
-                    "name": "CFENGINE",
-                    "set": "lucee@4.5"
-                }
-            ],
+            "env": [{
+                "name": "CFENGINE",
+                "set": "lucee@4.5"
+            }],
             "ports": [
                 "8080/tcp",
                 "8443/tcp"
@@ -4927,8 +4660,7 @@
             "platform": "linux",
             "logo": "https://portainer-io-assets.sfo2.digitaloceanspaces.com/logos/ortussolutions-contentbox.png",
             "image": "ortussolutions/contentbox:latest",
-            "env": [
-                {
+            "env": [{
                     "name": "express",
                     "set": "true"
                 },
@@ -4945,8 +4677,7 @@
                 "8080/tcp",
                 "8443/tcp"
             ],
-            "volumes": [
-                {
+            "volumes": [{
                     "container": "/data/contentbox/db"
                 },
                 {
@@ -5029,13 +4760,11 @@
                 "url": "https://github.com/portainer/templates",
                 "stackfile": "stacks/wordpress/docker-stack.yml"
             },
-            "env": [
-                {
-                    "name": "MYSQL_DATABASE_PASSWORD",
-                    "label": "Database root password",
-                    "description": "Password used by the MySQL root user."
-                }
-            ]
+            "env": [{
+                "name": "MYSQL_DATABASE_PASSWORD",
+                "label": "Database root password",
+                "description": "Password used by the MySQL root user."
+            }]
         },
         {
             "type": 3,
@@ -5051,13 +4780,11 @@
                 "url": "https://github.com/portainer/templates",
                 "stackfile": "stacks/wordpress/docker-compose.yml"
             },
-            "env": [
-                {
-                    "name": "MYSQL_DATABASE_PASSWORD",
-                    "label": "Database root password",
-                    "description": "Password used by the MySQL root user."
-                }
-            ]
+            "env": [{
+                "name": "MYSQL_DATABASE_PASSWORD",
+                "label": "Database root password",
+                "description": "Password used by the MySQL root user."
+            }]
         },
         {
             "type": 2,
@@ -5072,8 +4799,7 @@
                 "url": "https://github.com/portainer/templates",
                 "stackfile": "stacks/microsoft-oms/docker-stack.yml"
             },
-            "env": [
-                {
+            "env": [{
                     "name": "AZURE_WORKSPACE_ID",
                     "label": "Workspace ID",
                     "description": "Azure Workspace ID"
@@ -5099,8 +4825,7 @@
                 "url": "https://github.com/portainer/templates",
                 "stackfile": "stacks/sematext-agent-docker/docker-stack.yml"
             },
-            "env": [
-                {
+            "env": [{
                     "name": "LOGSENE_TOKEN",
                     "label": "Logs token"
                 },
@@ -5123,10 +4848,53 @@
                 "url": "https://github.com/portainer/templates",
                 "stackfile": "stacks/datadog-agent/docker-stack.yml"
             },
-            "env": [
+            "env": [{
+                "name": "API_KEY",
+                "label": "Datadog API key"
+            }]
+        },
+        {
+            "title": "Dozzle",
+            "type": "2",
+            "description": "Dozzle is a simple and responsive application that provides you with a web based interface to monitor your Docker container logs live. It doesn’t store log information, it is for live monitoring of your container logs only.",
+            "categories": [
+                "Other",
+                "Tools"
+            ],
+            "logo": "https://dozzle.dev/favicon.c9c6818a.ico",
+            "image": "amir20/dozzle:latest",
+            "ports": [
+                "8888:8080/tcp"
+            ],
+            "name": "yacht",
+            "platform": "linux",
+            "restart_policy": "unless-stopped",
+            "volumes": [{
+                "bind": "/var/run/docker.sock",
+                "container": "/var/run/docker.sock"
+            }]
+        }, {
+            "title": "Jdownloader",
+            "type": "3",
+            "description": "JDownloader is a free, open-source download management tool with a huge community of developers that makes downloading as easy and fast as it should be. Users can start, stop or pause downloads, set bandwith limitations, auto-extract archives and much more. It's an easy-to-extend framework that can save hours of your valuable time every day!",
+            "categories": [
+                "Downloaders"
+            ],
+            "logo": "https://jdownloader.org/_media/knowledge/wiki/jdownloader.png?w=150",
+            "image": "jlesage/jdownloader-2",
+            "ports": [
+                "5800:5800/tcp"
+            ],
+            "name": "jdownloader",
+            "platform": "linux",
+            "restart_policy": "unless-stopped",
+            "volumes": [{
+                    "bind": "/portainer/Files/AppData/Config/qBittorrent",
+                    "container": "/config"
+                },
                 {
-                    "name": "API_KEY",
-                    "label": "Datadog API key"
+                    "bind": "/portainer/Downloads",
+                    "container": "/downloads"
                 }
             ]
         },

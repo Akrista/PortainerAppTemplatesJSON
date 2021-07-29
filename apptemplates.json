@@ -3626,6 +3626,17 @@
             "restart_policy": "unless-stopped",
             "title": "Wikijs",
             "type": 1,
+            "env": [{
+                    "default": "1000",
+                    "label": "PUID",
+                    "name": "PUID"
+                },
+                {
+                    "default": "100",
+                    "label": "PGID",
+                    "name": "PGID"
+                }
+            ],
             "volumes": [{
                     "bind": "/portainer/Files/AppData/Config/Wikijs",
                     "container": "/config"
